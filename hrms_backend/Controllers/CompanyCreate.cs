@@ -318,7 +318,7 @@ namespace hrms_backend.Controllers
             // Save the activation token in your database along with employeeId and companyId
             SaveActivationToken(employeeId, companyId, activationToken);
 
-            string activationLink = $"https://58ee-49-43-3-195.ngrok-free.app/#/loading?token={activationToken}\r\n";
+            string activationLink = $"https://frontend-hrms.onrender.com/#/loading?token={activationToken}\r\n";
 
             // HTML body with a well-designed activation button
             string body = $@"
