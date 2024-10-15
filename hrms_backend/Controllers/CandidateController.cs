@@ -24,7 +24,7 @@ namespace hrms_backend.Controllers
         public CandidateController(HrmsDbContext dbContext)
         {
             _dbContext = dbContext;
-            BaseURL = "https://10.0.0.168/hrms";
+            BaseURL = "https://hrms-backend-zy0o.onrender.com";
         }
         [HttpPost]
         public async Task<IActionResult> PostCandidate([FromForm] Candidate candidate, IFormFile file)

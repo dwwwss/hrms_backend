@@ -22,7 +22,7 @@ public class QrCodeController : ControllerBase
         _dbContext = dbContext;
 
         // Set the base URL here. Update this based on your deployment environment.
-        BaseURL = "http://10.0.0.183/hrms";
+        BaseURL = "https://hrms-backend-zy0o.onrender.com";
     }
 
     [HttpPost("generatecompanyqr/{companyId}")]

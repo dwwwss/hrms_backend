@@ -15,7 +15,7 @@ namespace hrms_backend.Controllers
     public class ImportController : ControllerBase
     {
         private readonly HrmsDbContext _dbContext;
-        private const string BaseURL = "http://10.0.0.183  /hrms";
+        private const string BaseURL = "https://hrms-backend-zy0o.onrender.com";
 
         public ImportController(HrmsDbContext dbContext)
         {
