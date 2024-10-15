@@ -229,8 +229,8 @@ namespace hrms_backend.Controllers
                     FkCompanyId = companyId,
                     Body = "Hi {Fullname},\r\n\r\n\r\n\r\nThank you so much for your interest in the {{job_title}} job at {CompanyName}.\r\n\r\n\r\n\r\nUnfortunately, we have decided to move forward with other candidates for this position, but we would like to thank you for talking to our team and giving us the opportunity to learn about your skills and accomplishments. \r\n\r\n\r\n\r\nWe wish you good luck with your job search and professional future endeavors.\r\n\r\n\r\n\r\nBest regards,\r\n\r\n\r\n\r\n{CompanyName}",
                     EmailTemplate1 = "Offer Letter",
-                    LastModified = DateTime.Now,
-                    // You can set other properties as needed
+                    LastModified = DateTime.UtcNow,  // Use UTC here
+                                                     // You can set other properties as needed
                 };
 
                 var emailTemplate2 = new EmailTemplate
@@ -240,8 +240,8 @@ namespace hrms_backend.Controllers
                     FkCompanyId = companyId,
                     Body = "Hi {Fullname},\r\n\r\n\r\n\r\nThank you so much for your interest in the {{job_title}} job at {CompanyName}.\r\n\r\n\r\n\r\nUnfortunately, we have decided to move forward with other candidates for this position, but we would like to thank you for talking to our team and giving us the opportunity to learn about your skills and accomplishments. \r\n\r\n\r\n\r\nWe wish you good luck with your job search and professional future endeavors.\r\n\r\n\r\n\r\nBest regards,\r\n\r\n\r\n\r\n{CompanyName}",
                     EmailTemplate1 = "Reject Letter",
-                    LastModified = DateTime.Now,
-                    // You can set other properties as needed
+                    LastModified = DateTime.UtcNow,  // Use UTC here
+                                                     // You can set other properties as needed
                 };
 
                 _dbContext.EmailTemplates.Add(emailTemplate1);

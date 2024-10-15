@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using System.Text.Json;
 namespace hrms_backend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] 
     [ApiController]
     public class WorkscheduleController : Controller
     {
