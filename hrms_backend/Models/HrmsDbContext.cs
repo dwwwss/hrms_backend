@@ -111,7 +111,7 @@ public partial class HrmsDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=10.0.0.168,1433;Database=HRMS_DB;User Id=rishi;Password=123456;Encrypt=True;TrustServerCertificate=True");
+        => optionsBuilder.UseNpgsql("Host=junction.proxy.rlwy.net;Port=34656;Database=railway;Username=postgres;Password=OuNZrdfadpOMjbNGqmtEGDshxKGPdtSf;SSL Mode=Disable;Trust Server Certificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

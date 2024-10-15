@@ -5,6 +5,7 @@ using System.Text;
 using hrms_backend.Models;
 using hrms_backend.Controllers;
 using Microsoft.OpenApi.Models;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 using hrms_backend;
 using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
@@ -38,7 +39,7 @@ new string[]{}
 });
 });
 builder.Services.AddDbContext<HrmsDbContext>(options =>
-    options.UseSqlServer(connectionString)
+    options.UseNpgsql(connectionString)
 );
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
